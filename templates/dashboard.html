@@ -1,5 +1,5 @@
 <h2>Add TMS user</h2>
-<form>
+<form method="POST" action="{{ url_for('generate_user_information') }}">
     <label>fullname:</label><br>
     <input name="fullname"> <input name="generate_user_information" type="submit">
 </form>

@@ -1,5 +1,14 @@
-Full name:
-Username:
-Company: Trobz 
-Password: Generate by emoi 
-Email: 
+<html>
+    <h1>Create TMS user</h1>
+    <form method="POST" action="{{ url_for('tms_add_user') }}" >
+        <label>Full name: </label><input name="fullname" value="{{ data['fullname'] }}"><br>
+        <label>Email: </label><input name="email" value="{{ data['email'] }}"><br>
+        <label>Username:</label><input name="username" value="{{ data['username'] }}"><br>
+        <label>Company</label><input name="fullname" readonly value="Trobz Co., Ltd. [VN]"><br>
+        <label>Password:</label><input name="password" value="{{ data['password'] }}"><br>
+        <label>http auth:</label><input name="http_auth" value="{{ data['http_auth'] }}"><br>
+        <label>Password:</label><input name="http_pass" value="{{ data['http_pass'] }}"><br>
+        <input type="submit" name="create_user" value="Create user!">
+    </form>
+
+</html>
